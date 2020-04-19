@@ -1,0 +1,7 @@
+<a routerLink="/todoAdd" class="addBtn">Add</a>
+<ul>
+  <li *ngFor="let todo of todos | async">
+    {{todo.content}}
+    <button class="btn btn-danger" (click)="removeTodo(todo._id)">Delete</button>
+  </li>
+</ul>

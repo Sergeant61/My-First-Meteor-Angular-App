@@ -1,0 +1,9 @@
+<a routerLink="/todoList">List</a>
+<fieldset>
+  <legend>Add Todo</legend>
+  <label for="content">
+    Content
+  </label>
+  <input class="form-control" [(ngModel)]="content">
+  <button class="btn btn-success" (click)="addTodo()">Add</button>
+</fieldset>
